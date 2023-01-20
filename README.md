@@ -1,7 +1,7 @@
 # Module-11-Challenge - Full web-scraping and data analysis project
 
 Background
-------------
+--------------------
 You’re now ready to take on a full web-scraping and data analysis project. You’ve learned to identify HTML elements on a page, identify their id and class attributes, and use this knowledge to extract information via both automated browsing with Splinter and HTML parsing with Beautiful Soup. You’ve also learned to scrape various types of information. These include HTML tables and recurring elements, like multiple news articles on a webpage.
 
 As you work on this Challenge, remember that you’re strengthening the same core skills that you’ve been developing until now: collecting data, organizing and storing data, analyzing data, and then visually communicating your insights.
@@ -10,6 +10,7 @@ What You're Creating
 This new assignment consists of two technical products. You will submit the following deliverables:
 
 Deliverable 1: Scrape titles and preview text from Mars news articles.
+--------------------------------------------------------------------------------------------------
 
 Deliverable 2: Scrape and analyze Mars weather data, which exists in a table.
 
@@ -19,12 +20,14 @@ Download the following files to help you get started:
 Module 11 Challenge filesLinks to an external site.
 
 Instructions
+-----------------
 Part 1: Scrape Titles and Preview Text from Mars News
 Open the Jupyter Notebook in the starter code folder named part_1_mars_news.ipynb. You will work in this code as you follow the steps below to scrape the Mars News website.
 
 Use automated browsing to visit the Mars news site Links to an external site.. Inspect the page to identify which elements to scrape.
 
 HINT
+-------
 Create a Beautiful Soup object and use it to extract text elements from the website.
 
 Extract the titles and preview text of the news articles that you scraped. Store the scraping results in Python data structures as follows:
@@ -36,6 +39,7 @@ Store each title-and-preview pair in a Python dictionary and, give each dictiona
 Store all the dictionaries in a Python list.
 
 Print the list in your notebook.
+---------------------------------------------
 
 Optionally, store the scraped data in a file (to ease sharing the data with others). To do so, export the scraped data to a JSON file. (Note: there will be no extra points for completing this.)
 
@@ -45,6 +49,7 @@ Open the Jupyter Notebook in the starter code folder named part_2_mars_weather.i
 Use automated browsing to visit the Mars Temperature Data Site Links to an external site.. Inspect the page to identify which elements to scrape. Note that the URL is https://static.bc-edx.com/data/web/mars_facts/temperature.html.
 
 HINT
+--------
 Create a Beautiful Soup object and use it to scrape the data in the HTML table. Note that this can also be achieved by using the Pandas read_html function. However, use Beautiful Soup here to continue sharpening your web scraping skills.
 
 Assemble the scraped data into a Pandas DataFrame. The columns should have the same headings as the table on the website. Here’s an explanation of the column headings:
@@ -59,6 +64,7 @@ pressure: The atmospheric pressure at Curiosity's location
 Examine the data types that are currently associated with each column. If necessary, cast (or convert) the data to the appropriate datetime, int, or float data types.
 
 HINT
+-------
 Analyze your dataset by using Pandas functions to answer the following questions:
 
 How many months exist on Mars?
@@ -75,6 +81,7 @@ Visually estimate the result by plotting the daily minimum temperature.
 Export the DataFrame to a CSV file.
 
 Requirements
+----------------------
 Part 1: Scrape Titles and Preview Text from Mars News (40 points)
 Automated browsing (with Splinter) was used to visit the Mars news site, and the HTML code was extracted (with Beautiful Soup). (10 points)
 
@@ -96,16 +103,9 @@ Which month, on average, has the lowest atmospheric pressure? The highest? (10 p
 How many terrestrial days exist in a Martian year? A visual estimate within 25% was made. (10 points)
 The DataFrame was exported into a CSV file. (5 points)
 
-Grading
-This assignment will be evaluated against the requirements and assigned a grade according to the following table:
 
-Grade	Points
-A (+/-)	90+
-B (+/-)	80–89
-C (+/-)	70–79
-D (+/-)	60–69
-F (+/-)	< 60
 Submission
+------------------
 As a reminder, the deliverables for this Challenge are as follows:
 
 Deliverable 1: A Jupyter notebook containing code that scrapes the Mars news titles and preview text.
@@ -114,12 +114,9 @@ Deliverable 2: A Jupyter notebook containing code that scrapes the Mars weather 
 
 To submit your Challenge assignment, click Submit, and then provide the URL of your GitHub repository for grading.
 
-NOTE
-You are allowed to miss up to two Challenge assignments and still earn your certificate. If you complete all Challenge assignments, your lowest two grades will be dropped. If you wish to skip this assignment, click Next, and move on to the next module.
-
-Comments are disabled for graded submissions in Bootcamp Spot. If you have questions about your feedback, please notify your instructional staff or your Student Success Manager. If you would like to resubmit your work for an additional review, you can use the Resubmit Assignment button to upload new links. You may resubmit up to three times for a total of four submissions.
 
 References
+----------------
 The Mars News website Links to an external site.is operated by edX Boot Camps LLC for educational purposes only. The news article titles, summaries, dates, and images were scraped from NASA's Mars News Links to an external site.website in November 2022. Images are used according to the JPL Image Use Policy Links to an external site., courtesy NASA/JPL-Caltech.
 
 
